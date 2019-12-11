@@ -36,6 +36,7 @@
 	- [Usage](#usage)
 		- [Example](#example)
 	- [User Tracking](#user-tracking)
+	- [Disable logging for a single call](#disable-logging-for-a-single-call)
 	- [Options](#options)
 		- [Default options](#default-options)
 		- [Options documentation](#options-documentation)
@@ -218,6 +219,7 @@ const options = {
 | [belongsToUserOptions]      | Object  | undefined                                                                                                            | The options used for belongsTo between userModel and Revision model                                                                                                                                                    |
 | [metaDataFields]            | Object  | undefined                                                                                                            | The keys that will be provided in the meta data object. { key: isRequired (boolean)} format. Can be used to privovide additional fields - other associations, dates, etc to the Revision model                         |
 | [metaDataContinuationKey]   | String  | 'metaData'                                                                                                           | The continuation-local-storage key that contains the meta data object, from where the metaDataFields are extracted.                                                                                                    |
+| [documentFieldType]         | String  | ['legacy', 'postgres', 'mysql']                                                                                      | Changes the type of field 'document' what will be created. 'legacy' produces a `TEXT`, 'postgres' a `JSONB` and 'mysql' a `JSON` field.                                                                                |
 
 ## Limitations
 
