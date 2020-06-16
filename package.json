@@ -30,6 +30,9 @@
 		"versioning",
 		"nodejs"
 	],
+	"directories": {
+		"dist": "./dist"
+	},
 	"main": "dist/index.js",
 	"engines": {
 		"node": ">=5.0.0",
