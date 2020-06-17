@@ -12,6 +12,7 @@ node_modules
 .idea
 
 # Build directory
+dist
 
 # SQLite test db
 # test.db
